@@ -45,7 +45,6 @@ namespace Paqueteria
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
             var nombre = textBox1.Text;
             var contrasena = textBox2.Text;
             var resutado = _usuriosBL.Autenticar(nombre, contrasena);
@@ -63,6 +62,7 @@ namespace Paqueteria
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            Hide();
         }
         public void CargarDatos(UsuariosBl usuariosBl)
         {
@@ -138,11 +138,6 @@ namespace Paqueteria
                 textBox2.ForeColor = Color.LightGray;
                 textBox2.UseSystemPasswordChar = false;
             }
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -322,6 +322,7 @@
             this.Name = "Menu";
             this.Text = "Mercurio Mensajeria de los Dioses";
             this.Load += new System.EventHandler(this.Menu_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Menu_MouseDown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

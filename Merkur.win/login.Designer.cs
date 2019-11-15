@@ -159,6 +159,7 @@
             this.label2.TabIndex = 0;
             this.label2.Tag = "";
             this.label2.Text = "Usuario o Contraseña Incorrecta";
+            this.label2.Visible = false;
             // 
             // button2
             // 
@@ -207,6 +208,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frmlogin";
             this.Opacity = 0.9D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formlogin";
             this.Load += new System.EventHandler(this.Frmlogin_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Frmlogin_MouseDown);

@@ -111,6 +111,7 @@ namespace Merkur.win
             login.Show();
             this.Hide();
             login.Close();
+            this.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -133,12 +134,18 @@ namespace Merkur.win
         private void Menu_Load(object sender, EventArgs e)
         {
             var login = new Frmlogin();
+            ContenedorMenu.Width = 68;
             login.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             AbrirFormInPanel(new Productos());
+        }
+
+        private void ContenedorMenu_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

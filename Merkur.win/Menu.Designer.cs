@@ -173,6 +173,7 @@
             this.ContenedorMenu.Name = "ContenedorMenu";
             this.ContenedorMenu.Size = new System.Drawing.Size(250, 448);
             this.ContenedorMenu.TabIndex = 4;
+            this.ContenedorMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.ContenedorMenu_Paint);
             this.ContenedorMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ContenedorMenu_MouseDown);
             // 
             // button5
@@ -184,7 +185,7 @@
             this.button5.ForeColor = System.Drawing.Color.Transparent;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(11, 125);
+            this.button5.Location = new System.Drawing.Point(3, 125);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(177, 32);
@@ -196,16 +197,14 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(11, 394);
+            this.pictureBox3.Location = new System.Drawing.Point(4, 394);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(49, 43);
+            this.pictureBox3.Size = new System.Drawing.Size(68, 43);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
@@ -334,6 +333,7 @@
             this.Name = "Menu";
             this.Opacity = 0.9D;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Menu_MouseDown);

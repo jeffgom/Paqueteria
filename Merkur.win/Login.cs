@@ -80,7 +80,7 @@ namespace Merkur.win
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrecto");
+                label2.Visible = true;
             }
         }
 
